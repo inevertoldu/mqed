@@ -10,9 +10,9 @@ Just input following codes.<br><br>
 
 <h3>2. Down this repository files to your computer.</h3>
 By clicking 'Download Zip' in the menu <b>[<> Code]</b>, you can download them.<br>
-Then, unzip the files in your local.<br>
-There is you requirements.txt to install libraries you need to use.<br>
-Please input following codes<br><br>
+Then, unzip the files in your local device.<br>
+There is "requirements.txt" to install libraries you need to use.<br>
+Please input following codes:<br><br>
   
 <b>pip install -r requirements.txt</b><br>
 
