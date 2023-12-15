@@ -14,3 +14,16 @@ you can download requirements.txt from the git repository<br>
 <p></p>
 If you need to install any specific library, open up your terminal in the OS and type this command:<br>
 <b>pip install <i>package_name</i></b>
+
+<h3>4. Create your own environment file</h3>
+In order to run codes in this repository, you have to create your own environment file.<br>
+You should create '.env' file by using notepad or text editor.<br>
+The path should be the same as repository files.<br><br>
+
+FLASK_APP=app.py<br>
+FLASK_ENV=development<br>
+OPENAI_API_KEY=your_api_key_here<br>
+UPLOAD_FOLDER = './uploads'<br>
+export FLASK_APP=app.py<br>
+export FLASK_DEBUG=true<br><br>
+
