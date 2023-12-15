@@ -5,7 +5,7 @@ Anaconda is a software to support virtual environment for R and Python. Once you
 follow the link <a href="https://www.anaconda.com/download/">click</a>
 If you successfully install 'Anaconda' on your computer, you have to create a virtual environment by using command window or terminal.<br>
 Just input following codes.<br><br>
-<b>conda create -n mqed python=3.11</b>
+<b>conda create -n mqed python=3.11</b><br>
 <b>conda activate mqed</b>
 
 <h3>2. Down this repository files to your computer.</h3>
