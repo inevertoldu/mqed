@@ -16,6 +16,8 @@ Please input following codes:<br><br>
   
 <b>pip install -r requirements.txt</b><br>
 
+<p>Please visit <a href='https://pip.pypa.io/en/stable/installation/'>this page</a> if you want to install pip on your OS</p>
+
 If you need to install any specific library, open up your terminal in the OS and type this command:<br><br>
 <b>pip install <i>package_name</i></b>
 
