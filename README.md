@@ -1,5 +1,7 @@
 # How to use python and LLM(ChatGPT) in educational settings
 
+<h4>You can find out guidelines on the 'presentatin' folder.</h4>
+
 <h3>1. Install virtual environment(anaconda)</h3>
 Anaconda is a software to support virtual environment for R and Python. Once you install this programme, you don't need to install Python.<br>
 follow the link <a href="https://www.anaconda.com/download/">click</a>
