@@ -32,11 +32,36 @@ You should create '.env' file by using notepad or text editor.<br>
 The path should be the same as repository files.<br><br>
 
 <i>
+OPENAI_API_KEY=your_api_key_here<br>
+</i>
+
+# How to use ChatGPT on the web
+
+<h3>1. Update your own environment file</h3>
+In order to open the web page, you have to create/update your own environment file.<br>
+
+<i>
+OPENAI_API_KEY=your_api_key_here<br>
 FLASK_APP=app.py<br>
 FLASK_ENV=development<br>
-OPENAI_API_KEY=your_api_key_here<br>
-UPLOAD_FOLDER = './uploads'<br>
 export FLASK_APP=app.py<br>
 export FLASK_DEBUG=true<br><br>
 </i>
 
+If you finish this work, open up your terminal and type as follows:<br>
+<b>flask run</b>
+
+<h3>2. Understand Server-Client</h3>
+This is sort of web-service using Flask/Python.<br>
+You <b>Server</b> shall provide services by conversational retrieval AI on the web, <br>
+and users <b>Client</b> get some information by accessing the web.<br>
+
+This is the main structure of flask-powered web service.<br>
+<b>[Project Folder]</b><br>
+\- <b>app.py</b> <i>Main source file(python)</i><br>
+\- <b>.env</b> <i>Environment file</i><br>
+\- <b>[templates]</b> <i>Folder for HTML files</i><br>
+\- <b>[static]</b> <i>Folder image and style files</i><br><br>
+
+If you successfully do everything, open the web browser and go to the url:<br>
+<b>http://127.0.0.1/retrievalai</b>
