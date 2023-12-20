@@ -1,12 +1,14 @@
 # How to use python and LLM(ChatGPT) in educational settings
 
-<h4 style='text-align:right'>Last update: 21 Dec 2023</h4>
+
+
+<h4 align="right">Last update: 21 Dec 2023</h4>
 
 <h4>You can find out guidelines on the 'presentatin' folder.</h4>
 
 <h3>1. Install virtual environment(anaconda)</h3>
 Anaconda is a software to support virtual environment for R and Python. Once you install this programme, you don't need to install Python.<br>
-follow the link <a href="https://www.anaconda.com/download/">click</a>
+follow the link <a href="https://www.anaconda.com/download/" target="_blank">click</a>
 If you successfully install 'Anaconda' on your computer, you have to create a virtual environment by using command window or terminal.<br>
 Just input following codes.<br><br>
 <b>conda create -n mqed python=3.11</b><br>
@@ -20,13 +22,13 @@ Please input following codes:<br><br>
   
 <b>pip install -r requirements.txt</b><br>
 
-<p>Please visit <a href='https://pip.pypa.io/en/stable/installation/'>this page</a> if you want to install pip on your OS</p>
+<p>Please visit <a href='https://pip.pypa.io/en/stable/installation/' target="_blank">this page</a> if you want to install pip on your OS</p>
 
 If you need to install any specific library, open up your terminal in the OS and type this command:<br><br>
 <b>pip install <i>package_name</i></b>
 
 <h3>3. Get your own ChatGPT API Key</h3>
-If you would like to get your own API key, follow the link <a href="https://www.howtogeek.com/885918/how-to-get-an-openai-api-key/">click</a>
+If you would like to get your own API key, follow the link <a href="https://www.howtogeek.com/885918/how-to-get-an-openai-api-key/" target="_blank">click</a>
 
 <h3>4. Create your own environment file</h3>
 In order to run codes in this repository, you have to create your own environment file.<br>
@@ -70,7 +72,7 @@ If you successfully do everything, open the web browser and go to the url:<br>
 
 <h3>3. Distribute the service</h3>
 You should obtain public IP address to open your own service.<br>
-If you are intested in renting web hosting service for python-based deep learning, please refer to <a href='https://www.unite.ai/best-gpu-hosting-providers/'>the web site</a>.<br>
+If you are intested in renting web hosting service for python-based deep learning, please refer to <a href='https://www.unite.ai/best-gpu-hosting-providers/' target="_blank">the web site</a>.<br>
 In case of Linux, following commands make you run the service:<br>
 <b>pip install gunicorn</b><br>
 <b>nohup gunicorn -b 0.0.0.0:5000 app:app &</b><br><br>
