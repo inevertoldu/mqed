@@ -57,8 +57,8 @@ You <b>Server</b> shall provide services by conversational retrieval AI on the w
 and users <b>Client</b> get some information by accessing the web.<br>
 
 This is the main structure of flask-powered web service.<br>
-[Project Folder]
-\- app.py
-\- .env
-\- [templates]
-\- [static]
+<b>[Project Folder]</b>
+\- app.py <i>main source file(python)</i><br>
+\- .env <i>environment file</i><br>
+\- <b>[templates]</b> <i>HTML files</i><br>
+\- <b>[static]</b> <i>image and style files</i><br>
