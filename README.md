@@ -4,7 +4,7 @@
 
 <h4 align="right">Last update: 21 Dec 2023</h4>
 
-<h4>You can find out guidelines on the 'presentatin' folder.</h4>
+<h4>You can find out guidelines on the 'presentation' folder in this repository.</h4>
 
 <h3>1. Install virtual environment(anaconda)</h3>
 Anaconda is a software to support virtual environment for R and Python. Once you install this programme, you don't need to install Python.<br>
