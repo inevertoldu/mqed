@@ -64,4 +64,13 @@ This is the main structure of flask-powered web service.<br>
 \- <b>[static]</b> <i>Folder image and style files</i><br><br>
 
 If you successfully do everything, open the web browser and go to the url:<br>
-<b>http://127.0.0.1:5000/retrievalai</b>
+<b>http://127.0.0.1:5000/retrieveai</b>
+
+<h3>3. Distribute the service</h3>
+You should obtain public IP address to open your own service.<br>
+If you are intested in renting web hosting service for python-based deep learning, please refer to <a href='https://www.unite.ai/best-gpu-hosting-providers/'>the web site</a>.<br>
+In case of Linux, following commands make you run the service:<br>
+<b>pip install gunicorn</b>
+<b>nohup gunicorn -b 0.0.0.0:5000 app:app &</b><br>
+
+<b>nohup</b> is a command to keep your service running while the machine is turned on.
