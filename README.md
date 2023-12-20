@@ -57,8 +57,11 @@ You <b>Server</b> shall provide services by conversational retrieval AI on the w
 and users <b>Client</b> get some information by accessing the web.<br>
 
 This is the main structure of flask-powered web service.<br>
-<b>[Project Folder]</b>
-\- app.py <i>main source file(python)</i><br>
-\- .env <i>environment file</i><br>
-\- <b>[templates]</b> <i>HTML files</i><br>
-\- <b>[static]</b> <i>image and style files</i><br>
+<b>[Project Folder]</b><br>
+\- <b>app.py</b> <i>Main source file(python)</i><br>
+\- <b>.env</b> <i>Environment file</i><br>
+\- <b>[templates]</b> <i>Folder for HTML files</i><br>
+\- <b>[static]</b> <i>Folder image and style files</i><br><br>
+
+If you successfully do everything, open the web browser and go to the url:<br>
+<b>http://127.0.0.1/retrievalai</b>
