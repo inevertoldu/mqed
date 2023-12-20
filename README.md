@@ -1,6 +1,6 @@
 # How to use python and LLM(ChatGPT) in educational settings
 
-<h4 align='right'>Last update: 21 Dec 2023</h4>
+<h4 style='text-align:right'>Last update: 21 Dec 2023</h4>
 
 <h4>You can find out guidelines on the 'presentatin' folder.</h4>
 
