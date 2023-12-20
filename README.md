@@ -14,7 +14,7 @@ Just input following codes.<br><br>
 <b>conda create -n mqed python=3.11</b><br>
 <b>conda activate mqed</b>
 
-<h3>2. Down this repository files to your computer.</h3>
+<h3>2. Download this repository files to your computer.</h3>
 By clicking 'Download Zip' in the menu <b>[<> Code]</b>, you can download them.<br>
 Then, unzip the files in your local device.<br>
 There is "requirements.txt" to install libraries you need to use.<br>
