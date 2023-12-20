@@ -64,4 +64,4 @@ This is the main structure of flask-powered web service.<br>
 \- <b>[static]</b> <i>Folder image and style files</i><br><br>
 
 If you successfully do everything, open the web browser and go to the url:<br>
-<b>http://127.0.0.1/retrievalai</b>
+<b>http://127.0.0.1:5000/retrievalai</b>
