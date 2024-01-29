@@ -38,8 +38,10 @@ nltk.download('punkt')  # 토크나이저에 필요한 데이터를 다운로드
 embeddings = OpenAIEmbeddings(model='text-embedding-ada-002', openai_api_key=OPENAI_API_KEY, max_retries=20)
 knowledge_model = ChatOpenAI(temperature=0, model_name=MODEL)
 
-vector_gift = Chroma(persist_directory='csv_db', embedding_function=embeddings)
-qa_gift = ConversationalRetrievalChain.from_llm(knowledge_model, vector_gift.as_retriever(search_kwargs={"k": 3}), return_source_documents=True)
+# If you want to use your own dataset, just change this paremeter 'persist_directory'.
+vector_gift = Chroma(persist_directory='kase_db', embedding_function=embeddings)
+
+qa_gift = ConversationalRetrievalChain.from_llm(knowledge_model, vector_gift.as_retriever(search_kwargs={"k": 4}), return_source_documents=True)
 
 app.config['SESSION_COOKIE_MAX_SIZE'] = 4800  # 세션의 크기에 대한 문제
 app.config['SECRET_KEY'] = 'your_secret_key_here'  # 보안을 위한 시크릿 키 설정
@@ -102,12 +104,12 @@ def questioning(model, lists, query):
     lists.append({'type':'human', 'content':query, 'additional_kwargs':{}, 'example':False})
     lists.append({'type':'ai', 'content':result['answer'], 'additional_kwargs':{'source':refs}, 'example':False})
             
-    return lists
+    return lists, refs
 
 
 @app.route('/')
 def hello():
-    return 'Hello, Welcome to My World!'
+    return 'It is really drizzle and windy!!'
 
 
 @app.route('/retrieveai', methods=['GET', 'POST'])
@@ -125,12 +127,20 @@ def retrieveai():
         print(message)
         chat_history = session.get('gift_history', [])
         print(chat_history)
-        chat_history = questioning(qa_gift, chat_history, message)
+        chat_history, refs = questioning(qa_gift, chat_history, message)
+        
+        ref_text = ''
+        
+        for item in refs:
+            ref_text = ref_text + ' - ' + str(item) + '\n'
+            
         answer = chat_history[-1]['content']
         result = markdown.markdown(answer, extensions=['md_in_html'])
+        ref_text = markdown.markdown(ref_text, extensions=['md_in_html'])
+        result = result + '<br><b>Reference</b>' + ref_text
         session['gift_history'] = chat_history
         
-        return jsonify({'data':result})
+        return jsonify({'data': result})
 
 
 if __name__ == '__main__':
