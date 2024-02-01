@@ -2,7 +2,8 @@
 
 
 
-<h4 align="right">Last update: 21 Dec 2023</h4>
+<h4 align="right">Last update: 1 Feb 2024</h4>
+<h4 aligh="right">KASE Lecture Presentation uploaded in "presentation"</h4>
 
 <h4>You can find out guidelines on the 'presentation' folder in this repository.</h4>
 
